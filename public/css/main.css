@@ -1,0 +1,82 @@
+.btn{
+    background-color: brown;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    cursor: pointer;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: 600;
+    user-select: none;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.post{
+    border: 1px solid black;
+    padding: 13px;
+}
+
+.post2 {
+    display: flex;
+    margin-top: 50px;
+}
+.btn1,.btn2 {
+    font-size: 30px;
+    border-radius: 50px;
+    background-color: aqua;
+    width: 50px;
+    height: 50px;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+}
+.num {
+    width: 30px;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn2 {
+    font-size: 30px;
+}
+
+.post3 {
+    background-color: aliceblue;
+    border: 3px solid blue;
+    padding: 50px;
+}
+.like {
+    background-color: blueviolet;
+    padding: 5px;
+    display: inline-block;
+   border: none;
+    color: aliceblue;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 40px;
+    user-select: none;
+}
+
+/* .like:disabled{
+    background-color:rgba(255, 0, 0, 0.734);
+} */
+
