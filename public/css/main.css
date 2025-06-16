@@ -79,4 +79,17 @@ body{
 /* .like:disabled{
     background-color:rgba(255, 0, 0, 0.734);
 } */
+ul {
+    background-color: rgb(71, 86, 99);
+    padding: 12px;
+    border-radius: 4px;
+    color: aliceblue;
+    transition: all 0.3s linear;
+}
+ul:hover{
+    background-color: blue;
+}
+ul li {
+    list-style: none;
+}
 

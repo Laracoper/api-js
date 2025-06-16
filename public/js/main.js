@@ -93,8 +93,10 @@ async function myfunc(params) {
     const result = await res.json()
     console.log(result)
 
-    let aray = result.aray
+    // let aray = result.aray
+    const {aray,mess} = result
     console.log(aray);
+     console.log(mess);
 
     let post = document.querySelector('.post3')
     post.insertAdjacentHTML('beforeend', `
@@ -104,7 +106,7 @@ async function myfunc(params) {
         <p>юзер агент: ${result.user_agent}</p>
         <p>s: ${result.s}</p>
         <p>v: ${result.v}</p>
-        <p>данные: ${get(aray)}</p>
+        <p>${setMembers(aray)}</p>
          
         `)
 
@@ -123,15 +125,20 @@ async function myfunc(params) {
 
 }
 
-function get(aray) {
-    let get = document.querySelector('.get')
-    aray.forEach(el => {
-        get.innerHTML = `
-<p>${el.name}</p>
-<p>${el.age}</p>
-`
-    });
+
+// function setMembers(members){
+//     return members
+//     .map((hero)=>`
+//     <p>имя ${hero.name}</p>
+//     <p> возраст ${hero.age}</p>
+//     `).join('')
+// }
+
+function setMembers(members){
+    return members
+    .map((hero)=>`<ul>
+    <li>имя ${hero.name}</li>
+    <li> возраст ${hero.age}</li></ul>
+    `).join('')
 }
-
-
 
